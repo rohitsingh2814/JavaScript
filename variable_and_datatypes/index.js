@@ -1,7 +1,7 @@
 console.log(`hello world`);
 console.log(`i like pizza`);
 
-window.alert(`hello`);
+//window.alert(`hello`);
  
 document.getElementById("myh").textContent="Hello";
 document.getElementById("myp").textContent="I like pizza!";
@@ -31,9 +31,9 @@ number to string ->100+" "
  //1.declartion let x;
  //2.assignment x=100;
  /*
- 1.let->we reassign it
- 2.var->available out side block but not let 
- 3.const->we not reassign it .create error,inialliaze first 
+ 1.let->we only reassign it nor redeclare, it is  block-scoped
+ 2.var->function scoped not access outside the block, var keyword allows variables to be both reassigned and redefined within the same scope
+ 3.const->we not reassign it or not  redeclare .create error,inialliaze first ,in array or object modify is allowed in const but not reassign
  */
   let age=25;
   let price =10.99;
@@ -78,5 +78,25 @@ document.getElementById("status").textContent=`Status: ${status}`;
  let age2=25;
  const yearofBirth=1999;
   let userInfo =`Hi my name is`+first_name+' '+last_name;
+  
+
+  //function scoped-var
+// function solve(){
+//    var x=25;
+//    console.log(x);
+//   }
+//   solve();
+// console.log(x);//error
+//   //block scoped-let
+//   {
+//     let r=56;
+//     console.log(r);
+//   }
+//   console.log(r);//error
 
 
+//js-dyanmically typed language
+let x=10;
+console.log(x);
+x="rohit";
+console.log(x);
