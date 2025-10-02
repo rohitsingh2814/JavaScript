@@ -36,6 +36,23 @@ console.log( str3.concat("hello ","world "));
 console.log(str3.replaceAll("my","My"));
 //replace all the occourecne
 console.log(str3);
+const name2="rohit";
+//concat is used concateing two or more String
+console.log(name2.concat(" kumar ","singh"));
+// we also perform by "+" operator
+console.log(name2+" kumar "+"singh");
+//padStart() is used to hide digit of mobile number and account number 
+//similary we have padEnd()
+const lastfourdigit="7667";
+console.log(lastfourdigit.padStart(10,"*"));
+//returns the character od given index
+console.log(name2.charAt(2));
+console.log(name2[3]); //also used
+console.log(name2.charCodeAt(2)); //returns the ASCII values
+ const message="hello my name is ram";
+ console.log(message.split()); //['hello my name is ram']
+ console.log(message.split(" ")); //['hello', 'my', 'name', 'is', 'ram']
+ console.log(message.split("a"));//
 
 
 
