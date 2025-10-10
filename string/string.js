@@ -50,9 +50,9 @@ console.log(name2.charAt(2));
 console.log(name2[3]); //also used
 console.log(name2.charCodeAt(2)); //returns the ASCII values
  const message="hello my name is ram";
- console.log(message.split()); //['hello my name is ram']
- console.log(message.split(" ")); //['hello', 'my', 'name', 'is', 'ram']
- console.log(message.split("a"));//
+ console.log(message.split()); //['hello my name is ram'] convert simple array
+ console.log(message.split(" ")); //['hello', 'my', 'name', 'is', 'ram'] split from " ";
+ console.log(message.split("a"));//['hello my n', 'me is r', 'm'] split from "a";
 
 
 
